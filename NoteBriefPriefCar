@@ -1,0 +1,70 @@
+https://medium.com/@thaoly_22574/pandas-les-fonctions-essentielles-b978c6377db0 #panda
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_sql.html
+pip install PyMySQL
+
+
+https://sql.sh/
+
+drop database test
+drop table if exists cardata
+
+sudo mysql -u root -p
+[10:38]
+USE mysql;
+SELECT User, Host, plugin FROM mysql.user;
+UPDATE user SET plugin='mysql_native_password' WHERE User='root';
+FLUSH PRIVILEGES;
+exit;
+
+
+
+
+
+
+
+CREATE TABLE cardata (
+Car_Name VARCHAR(99)
+,Year INT(4)
+,Selling_Price FLOAT(50)
+,Present_Price FLOAT(50)
+,Kms_Driven INT(6)
+,Fuel_Type VARCHAR(99)
+,Seller_Type VARCHAR(99)
+,Transmission VARCHAR(99)
+,Owner INT(2)
+);
+
+
+*************Regression lineaire
+
+https://www.youtube.com/watch?v=vG6tDQc86Rs
+https://eli.thegreenplace.net/2014/derivation-of-the-normal-equation-for-linear-regression
+
+*********Seaborn**********
+
+https://medium.com/@asmaghorbel/1-2-3-plottez-visualisez-vos-donn%C3%A9es-avec-les-librairies-matplotlib-et-seaborn-160a5dc83929
+
+
+***********
+from data to viz
+https://www.data-to-viz.com/
+
+
+Host gitlab.com
+    IdentityFile ~/.ssh/id_rsa
+    
+****************one hot encoding
+    pd.get_dummies(nom_des_colonnes,drop_first=True)
+    
+*************Numpy    
+    http://math.mad.free.fr/depot/numpy/base.html
+    
+*************regression lineaire
+https://www.kaggle.com/sudhirnl7/linear-regression-tutorial
+    
+https://scikit-learn.org/stable/developers/develop.html  
+
+
+
+https://fractale.co/tension/myndmap@dtrckd/0x7d03
+    
