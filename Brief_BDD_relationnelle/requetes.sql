@@ -102,6 +102,7 @@ ALTER TABLE netflix_shows DROP COLUMN rating;	#13
 
 ALTER TABLE netflix_shows ADD id INT NOT NULL AUTO_INCREMENT primary key first	#14
 DELETE FROM netflix_shows ORDER BY id DESC LIMIT 100;
+DELETE FROM netflix_shows WHERE id BETWEEN 200 AND 300;
 
 UPDATE netflix_shows SET ratingLevel = "it's a comment" WHERE ID = 26 AND title = "Marvel's Iron Fist";	#15
 
