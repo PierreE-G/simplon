@@ -11,7 +11,7 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 
 from app import app
-from apps import app1, app2
+from apps import app1, app2, acp
 
 
 app.layout = html.Div([
@@ -22,6 +22,8 @@ app.layout = html.Div([
     dcc.Link('App 1', href='/apps/app1'),
     html.Br(),
     dcc.Link('App 2', href='/apps/app2'),
+    html.Br(),
+    dcc.Link('ACP', href='/apps/acp'),
         # content will be rendered in this element
     html.Div(id='page-content'),
     html.Div(children=[
@@ -43,6 +45,8 @@ def display_page(pathname):
         return app1.layout
     elif pathname == '/apps/app2':
         return app2.layout
+    elif pathname == '/apps/acp':
+        return acp.layout
     else:
         return ''
 

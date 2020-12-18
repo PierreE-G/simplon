@@ -14,6 +14,7 @@ import dash_html_components as html
 
 import plotly.express as px
 
+from app import app
 
 df = pd.read_csv('timesData.csv')
 #df2 = df[:50]
@@ -45,6 +46,9 @@ layout = html.Div(children=[
         'textAlign': 'center',
     })
         ),
+   html.Div(html.Img(src=app.get_asset_url('ebouli.png'))),
+    #html.Div(html.Img(src=data('ebouli.png'))),
+
     html.Div([
         dash_table.DataTable(
             data=df2.to_dict('records'),
@@ -59,8 +63,9 @@ layout = html.Div(children=[
                 'whiteSpace': 'normal',
                 'backgroundColor': 'rgb(50, 50, 50)',
                 'color': 'white'
-                },
-            export_format='csv'
+                }
+            
+
             )
         ]),
     html.Div(style={'backgroundColor': colors['background']}, children=[
