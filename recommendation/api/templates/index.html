@@ -7,12 +7,12 @@
 </head>
 <body>
     <h1>Select you'r Artists :</h1>
-    <FORM name="Item_1" ></FORM>
-            {% for a in listed %}
+    <form action="/results/" method='POST'>
+            {% for a in artists %}
             {{ a }}  :  <input type="checkbox" name="selection" value=      
-            {{a}} >/////
+            {{a}} >/
             {% endfor %}
-            <input type="submit">
-    </FORM>
+            <input type="submit">/
+    </form>
 </body>
 </html>
